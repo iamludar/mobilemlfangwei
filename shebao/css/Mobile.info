@@ -1,0 +1,14 @@
+name = Mobile
+description = 这是一个专门为张总定义的社保在线主题.
+package = Core
+version = VERSION
+core = 7.x
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+; Information added by Drupal.org packaging script on 2016-06-15
+version = "7.44"
+project = "drupal"
+datestamp = "1466022211"
+

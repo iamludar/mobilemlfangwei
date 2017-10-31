@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>订单查询系统</title>
+    <link rel="stylesheet" href="./weui/dist/style/weui.css"/>
+    <link rel="stylesheet" href="./weui/dist/example/example.css"/>
+    <script src="dingdan.js"></script>
+</head>
+<body ontouchstart>
+           <div class="page">
+       <div class="hd">
+        <h1 class="page_title">订单查询系统</h1>
+        <p class="page_desc">上海鲜伢仔食品有限公司</p>
+        </div>
+    <div class="bd spacing">
+		<div class="weui_cells weui_cells_form">
+			<div class="weui_cell">
+				<div class="weui_cell_hd"><label class="weui_label">订单号</label></div>
+					<div class="weui_cell_bd weui_cell_primary">
+						<input class="weui_input" type="number"  placeholder="请输入12位订单号" id="FwCodec">
+					</div>
+				</div>
+			</div>
+	</div>
+	<div class="bd">	
+		<div class="bd spacing">
+		&nbsp;
+		</div>
+		<div class="bd spacing">
+			<a href="javascript:fwchack('FwCodec','ReturnResult');" class="weui_btn weui_btn_primary" >点击查询</a>
+		</div>
+	</div>
+	<div class="bd">	
+		<div class="bd spacing">
+		&nbsp;
+		</div>
+		<div class="bd spacing">
+			<div class="alert alert-danger" id="ReturnResult">这里显示您的查询结果</div>
+		</div>
+	</div>
+
+	<div class="weui_dialog_alert" id="dialog2" style="display: none;">
+        <div class="weui_mask"></div>
+        <div class="weui_dialog">
+            <div class="weui_dialog_hd"><strong class="weui_dialog_title" id="dialog2_title">警告</strong></div>
+            <div class="weui_dialog_bd" id="dialog2_body">弹窗内容，告知当前页面信息等</div>
+            <div class="weui_dialog_ft">
+                <a href="javascript:;" class="weui_btn_dialog primary">确定</a>
+            </div>
+        </div>
+    </div>
+	 <div id="loadingToast" class="weui_loading_toast" style="display:none;">
+        <div class="weui_mask_transparent"></div>
+        <div class="weui_toast">
+            <div class="weui_loading">
+                <div class="weui_loading_leaf weui_loading_leaf_0"></div>
+                <div class="weui_loading_leaf weui_loading_leaf_1"></div>
+                <div class="weui_loading_leaf weui_loading_leaf_2"></div>
+                <div class="weui_loading_leaf weui_loading_leaf_3"></div>
+                <div class="weui_loading_leaf weui_loading_leaf_4"></div>
+                <div class="weui_loading_leaf weui_loading_leaf_5"></div>
+                <div class="weui_loading_leaf weui_loading_leaf_6"></div>
+                <div class="weui_loading_leaf weui_loading_leaf_7"></div>
+                <div class="weui_loading_leaf weui_loading_leaf_8"></div>
+                <div class="weui_loading_leaf weui_loading_leaf_9"></div>
+                <div class="weui_loading_leaf weui_loading_leaf_10"></div>
+                <div class="weui_loading_leaf weui_loading_leaf_11"></div>
+            </div>
+            <p class="weui_toast_content">正在查询</p>
+        </div>
+    </div>
+</div>
+ <script type="text/html" id="tpl_msg">
+<div class="page">
+    <div class="weui_msg">
+        <div class="weui_icon_area"><i class="weui_icon_success weui_icon_msg"></i></div>
+        <div class="weui_text_area">
+            <h2 class="weui_msg_title">操作成功</h2>
+            <p class="weui_msg_desc">内容详情，可根据实际需要安排</p>
+        </div>
+        <div class="weui_opr_area">
+            <p class="weui_btn_area">
+                <a href="javascript:;" class="weui_btn weui_btn_primary">确定</a>
+                <a href="javascript:;" class="weui_btn weui_btn_default">取消</a>
+            </p>
+        </div>
+        <div class="weui_extra_area">
+            <a href="">查看详情</a>
+        </div>
+    </div>
+</div>
+</script>
+    <script src="./weui/dist/example/zepto.min.js"></script>
+    <script src="./weui/dist/example/example.js"></script>
+	<script src="./weui/dist/example/router.min.js"></script>
+</body>
+</html>

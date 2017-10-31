@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="zh-CN" xml:lang="zh-CN">
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <meta name="description" content="点融网为广大个人和微小企业提供便利的投融资服务。借款产品灵活、大额、费用低、手续快；投资方式人性友好、回报高、百分百本金保护！Dianrong.com provides online efficient investment and financing services for individuals and SMEs. Better rates, lower cost, faster way to borrowers and more flexible investment, higher returns, 100% principal protection to investors." /> 
+  <meta name="keywords" content="P2P网贷,P2P网络贷款平台,P2P网络投资平台,P2P投资理财平台,网络贷款平台,团团赚,点融,点融网,点融官网" /> 
+  <link rel="shortcut icon" href="images/favicon.ico" /> 
+  <title>首页-index.html</title> 
+  <link href="css/bootstrap.min.css" rel="stylesheet" /> 
+  <link href="css/components.css?ver=142682356" rel="stylesheet" /> 
+  <link href="css/main.css?ver=142682356" rel="stylesheet" /> 
+  <link href="css/new-home.css?ver=142682356" rel="stylesheet" /> 
+  <style type="text/css">
+    @media (min-width: 992px) {
+      @font-face {
+        font-family: 'proxima-nova';
+        src: url('fonts/proximanova-regular-webfont.eot');
+        src: url('fonts/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+          url('fonts/proximanova-regular-webfont.woff') format('woff'),
+          url('fonts/proximanova-regular-webfont.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'proxima-nova';
+        src: url('fonts/proximanova-bold-webfont.eot');
+        src: url('fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+          url('fonts/proximanova-bold-webfont.woff') format('woff'),
+          url('fonts/proximanova-bold-webfont.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+      }
+    }
+  </style> 
+  <!-- Add support for bootstrap in IE8 --> 
+  <!--[if lt IE 9]>
+  <link href="css/ie8.css?ver=142682356" rel="stylesheet">
+  <![endif]--> 
+  <!--[if IE 9]>
+  <link href="css/ie9.css?ver=142682356" rel="stylesheet">
+  <![endif]--> 
+
+ </head> 
+ <body> 
+  <!--[if lt IE 8]>
+<div class="alert alert-warning text-center" style="margin-bottom:0;">
+  <p>你的浏览器不支持点融网的一些新特性，请升级你的浏览器至<a href="http://se.360.cn/">360浏览器</a>或<a href="http://browsehappy.com/">Chrome</a>。
+  </p>
+  <p>正在为你跳转到旧版网站...<a href="index.html">立即跳转</a></p>
+  <p>2015年了，IE8老了...</p>
+</div>
+<![endif]--> 
+  <div class="wrapper "> 
+   <!--header--> 
+   <header class="sl-header new-header ng-scope" ng-controller="HeaderCtrl" id="sl-header"> 
+    <nav class="navbar navbar-inverse navbar-static-top site-nav " role="navigation"> 
+     <div class="container new-home-container"> 
+      <ul class="nav navbar-nav site-nav-sns "> 
+       <li> <a href="#" class="icon-sns qq"> 
+         <div class="social-content"> 
+          <p class="social-title">易加保官方QQ群</p> 
+          <p>88888888</p> 
+         </div> </a> </li> 
+       <li> <a href="http://weibo.com/dianrongwang" target="_blank" class="icon-sns weibo" rel="nofollow"></a> </li> 
+       <li> <a href="#" class="icon-sns wechat"> 
+         <div class="social-content"> 
+          <p class="social-title">扫描关注微信公众号</p> 
+          <p><img src="images/qr-code.jpg" /></p> 
+         </div> </a> </li> 
+      </ul> 
+      <ul id="nonLoginBar" class="nav navbar-nav navbar-right navbar-sm site-nav-login"> 
+       <li><a id="login-panel" href="login.html" rel="nofollow">登录</a></li> 
+       <li><a id="create-account" href="reg.html" class="btn btn-sm" rel="nofollow">注册账户</a></li> 
+      </ul> 
+      <!--<ul class="nav navbar-nav navbar-right navbar-sm site-nav-user"> 
+       <li class="dropdown"> <a href="member_info.html" class="dropdown-toggle hoverHeader"  data-toggle="dropdown" data-hover="dropdown">素材火的账户 <b class="caret"></b></a> 
+        <ul class="dropdown-menu"> 
+         <li><a href="member_info.html">我的账户</a></li> 
+         <li><a href="#">退出</a></li> 
+        </ul> </li> 
+      </ul> -->
+     </div> 
+    </nav> 
+    <div class="site-menu"> 
+     <div class="header-navbar-container sl-nav-wrapper header-nav-container"> 
+      <nav class="navbar navbar-static-top sl-navbar" role="navigation"> 
+       <div class="container"> 
+        <div class="navbar-header  col-xs-2"> 
+         <a class="navbar-brand" href="index.html"> <span class="sl-logo">点融网 - DianRong</span> </a> 
+        </div> 
+        <div class="sl-nav col-xs-10"> 
+         <ul class="nav navbar-nav main-menu"> 
+          <!--menus--> 
+          <li class="main-link-list"> <a class="main-link" href="borrow.html"> <span class="sl-icon-bold-money-bag"></span> <span class="main-link-text">社保大厅</span> </a> </li> 
+          <li class="main-link-list"> <a class="main-link" href="market.html"> <span class="sl-icon-bold-trend"></span> <span class="main-link-text">福利商城</span> </a> </li> 
+          <li class="main-link-list"> <a class="main-link" href="about.html"> <span class="sl-icon-bold-linkman"></span> <span class="main-link-text">关于我们</span> </a> </li> 
+          <li class="main-link-list" ng-class="{active:isActive('/public/help-center')}"> <a class="main-link" href="/public/about#/contact"> <span class="sl-icon-bold-contact"></span> <span class="main-link-text">联系我们</span> </a> </li> 
+          <li class="main-link-list phone-contact"> <span class="sl-icon-bold-phone"></span> <span> 021-51992271</span> </li> 
+          <li class="main-link-list contact-bg"> <span class="contact-img"></span> </li> 
+         </ul> 
+        </div> 
+        <!-- /.navbar-collapse --> 
+       </div> 
+      </nav> 
+     </div> 
+     <!--secondaryNav--> 
+     <!--jumbotron--> 
+    </div> 
+   </header> 
+   <!--content--> 
+   <div class="new-home-wrapper"> 
+ <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+   <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+   <div id="myCarousel" class="carousel slide">
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="active item"><img class="img-responsive" src="http://img.rrb365.com/UF/PC/upload/Ad/2016/4/201604221354421.jpg" alt="HTML5 logo"  /></div>
+    <div class="item"><img class="img-responsive" src="http://img.rrb365.com/UF/PC/upload/Ad/2016/2/201602021124471.jpg" alt="HTML5 logo"  /></div>
+    <div class="item"><img class="img-responsive" src="http://img.rrb365.com/UF/PC/upload/Ad/2016/1/201601111114511.jpg" alt="HTML5 logo"  /></div>
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">‹</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">›</a>
+</div>
+   </div></div> 
+    <div class="home-page-container ng-scope" ng-controller="HomeCtrl"> 
+	<div class="row">
+		 <div class="col-xs-4">
+			<div style="color:red" class="text-center">专注<span style="font-size:60px">12</span>年</div>
+			<p class="text-center"> 专注于社保行业12年</p>
+		 </div>
+		 <div class="col-xs-4">
+			<div style="color:red" class="text-center">服务<span style="font-size:60px">5000</span>企业</div>
+			<p class="text-center"> 已有5000家企业选择了我们</p>
+		 </div>
+		 <div class="col-xs-4">
+			<div style="color:red" class="text-center">服务<span style="font-size:60px">200000</span>员工</div>
+			<p class="text-center"> 我们累计为20万以上员工提供社保服务</p>
+		 </div>
+	 </div>
+   
+   <div class="row choose-row"> 
+      <div class="col-xs-8 choose-left-part"> 
+       <div class="choose-info"> 
+        <div class="row desc"> 
+         <div class="col-xs-4 text-center"> 
+          <span class="bg-images simple"></span> 
+          <h4>为了家</h4> 
+          <span class="descprition ">买房无忧</span> 
+          <span>社保证明在手</span> 
+         </div> 
+         <div class="col-xs-4  text-center"> 
+          <span class="bg-images interest"></span> 
+          <h4>为了孩子</h4> 
+          <span class="descprition">为孩子选择更好的医院</span> 
+          <span class="">为孩子选择更好的医院</span> 
+         </div> 
+         <div class="col-xs-4 text-center"> 
+          <span class="bg-images safe"></span> 
+          <h4>为了自己</h4> 
+          <span class="descprition ">有医保有养老</span> 
+          <span>有医保有养老</span> 
+         </div> 
+        </div> 
+        <div class="arrow" ng-click="showDetail=!showDetail" ng-show="!showDetail">
+<span class="sl-icon-arrow-down"></span>
+</div>
+        <div class="row desc ng-hide"> 
+         <div class="col-xs-4 text-center"> 
+          <span class="bg-images guard"></span> 
+          <h4>保障</h4> 
+          <span class="descprition ">点融网不介入交易</span> 
+          <span>不接触资金不赚利差</span> 
+         </div> 
+         <div class="col-xs-4 text-center"> 
+          <span class="bg-images team"></span> 
+          <h4>高管团队</h4> 
+          <span class="descprition ">被新浪财经誉为</span> 
+          <span>P2P行业最牛黄金管理团队</span> 
+         </div> 
+         <div class="col-xs-4 text-center"> 
+          <span class="bg-images vip"></span> 
+          <h4>VIP</h4> 
+          <span class="descprition ">VIP客户专享</span> 
+          <span>1对1理财专属服务</span> 
+         </div> 
+        </div> 
+        <div class="arrow ng-hide"style="display:none"> 
+         <span class="sl-icon-arrow-up"></span> 
+        </div> 
+       </div> 
+      </div> 
+      <div class="col-xs-4 video-link" ng-click="linkToYouku()"> 
+      </div> 
+     </div> 
+   
+     <div class="row advertise-words-row"> 
+      <h3 class="text-center">我们提供激动人心的各项服务</h3> 
+      <div class="text-center tech-words">
+       立足为客户提供更好和更全面的服务
+      </div> 
+     </div>
+	 
+	 <!--此段为
+	 引用地址:http://www.jinzhr.com/index.html
+	 -->
+	 <div class="row">
+		 <div class="col-xs-3">
+			<span class="icon1 icon2"></span>
+			<h6>24小时响应式工单处理</h6>
+			<p>您的需求就是我们的追求，您的利益就是我们的利益，第一时间为您排忧解难</p>
+		 </div>
+		 <div class="col-xs-3">
+			<span class="icon1 icon3"></span>
+			<h6>100人客服团队专职服务</h6>
+			<p>强大的服务团队，明确的职能分工，高效全面的为您服务，为您的企业保驾护航</p>
+		 </div>
+		 <div class="col-xs-3">
+			<span class="icon1 icon4"></span>
+			<h6>工单邮件/短信及时到达</h6>
+			<p>社保不能断缴，时限不能错过，多渠道给您及时的回复和通知，降低您利益受损的可能性</p>
+		 </div>
+		 <div class="col-xs-3">
+			<span class="icon1 icon5"></span>
+			<h6>WAP/微信版一个都不少</h6>
+			<p>业务办理百分百透明，微信绑定企业号，HR员工随时查询办理状态，社保信息一手掌握</p>
+		 </div>
+	 </div>
+		
+     
+     <div class="row plans-row"> 
+      <div class="col-xs-5 plans-info"> 
+       <div class="left-part"> 
+        <div class="row title-plan"> 
+         <div class="col-xs-2"> 
+         
+         </div> 
+        
+        </div> 
+       
+        <div class="row">
+       
+        </div> 
+       </div> 
+      </div> 
+		
+      <div class="col-xs-7 plans-info-right" style="block">
+<ul class="scroll">	  
+       <!-- ngRepeat: plan in plans -->
+	   
+	   
+       <li class="row right-part ng-scope" ng-repeat="plan in plans">
+<div class="col-xs-2 plan-tuan-img">
+<img class="tuan-img group-grade-157001" src="images/3.jpg">
+</div>
+<div class="col-xs-4">
+<p class="rate-col">
+<span class="rate-red ng-binding"></span>
+<span class="sign">来自社保回访</span>
+</p>
+<p class="word-rate">手机用户135******55</p>
+</div>
+<div class="col-xs-6 ">
+<p class="top-margin ng-binding">我是一名个体户在这里写一些测试的文字，我是一个个体户在这里写一些测试</p>
+</div>
+
+</li>
+       
+	    <li class="row right-part ng-scope" ng-repeat="plan in plans">
+<div class="col-xs-2 plan-tuan-img">
+<img class="tuan-img group-grade-157001" src="images/4.jpg">
+</div>
+<div class="col-xs-4">
+<p class="rate-col">
+<span class="rate-red ng-binding"></span>
+<span class="sign">来自社保回访</span>
+</p>
+<p class="word-rate">手机用户135******55</p>
+</div>
+<div class="col-xs-6 ">
+<p class="top-margin ng-binding">我是一名个体户在这里写一些测试的文字，我是一个个体户在这里写一些测试</p>
+</div>
+
+</li>
+
+ <li class="row right-part ng-scope" ng-repeat="plan in plans">
+<div class="col-xs-2 plan-tuan-img">
+<img class="tuan-img group-grade-157001" src="images/5.jpg">
+</div>
+<div class="col-xs-4">
+<p class="rate-col">
+<span class="rate-red ng-binding"></span>
+<span class="sign">来自社保回访</span>
+</p>
+<p class="word-rate">手机用户135******55</p>
+</div>
+<div class="col-xs-6 ">
+<p class="top-margin ng-binding">我是一名个体户在这里写一些测试的文字，我是一个个体户在这里写一些测试</p>
+</div>
+
+</li>
+
+ <li class="row right-part ng-scope" ng-repeat="plan in plans">
+<div class="col-xs-2 plan-tuan-img">
+<img class="tuan-img group-grade-157001" src="images/1.jpg">
+</div>
+<div class="col-xs-4">
+<p class="rate-col">
+<span class="rate-red ng-binding"></span>
+<span class="sign">来自社保回访</span>
+</p>
+<p class="word-rate">手机用户135******55</p>
+</div>
+<div class="col-xs-6 ">
+<p class="top-margin ng-binding">我是一名个体户在这里写一些测试的文字，我是一个个体户在这里写一些测试</p>
+</div>
+
+</li>
+
+ <li class="row right-part ng-scope" ng-repeat="plan in plans">
+<div class="col-xs-2 plan-tuan-img">
+<img class="tuan-img group-grade-157001" src="images/2.jpg">
+</div>
+<div class="col-xs-4">
+<p class="rate-col">
+<span class="rate-red ng-binding"></span>
+<span class="sign">来自社保回访</span>
+</p>
+<p class="word-rate">手机用户135******55</p>
+</div>
+<div class="col-xs-6 ">
+<p class="top-margin ng-binding">我是一名个体户在这里写一些测试的文字，我是一个个体户在这里写一些测试</p>
+</div>
+
+</li>
+	   
+<li class="row right-part ng-scope" ng-repeat="plan in plans">
+<div class="col-xs-2 plan-tuan-img">
+<img class="tuan-img group-grade-157001" src="images/3.jpg">
+</div>
+<div class="col-xs-4">
+<p class="rate-col">
+<span class="rate-red ng-binding"></span>
+<span class="sign">来自社保回访</span>
+</p>
+<p class="word-rate">手机用户135******55</p>
+</div>
+<div class="col-xs-6 ">
+<p class="top-margin ng-binding">我是一名个体户在这里写一些测试的文字，我是一个个体户在这里写一些测试</p>
+</div>
+</li>
+
+<li class="row right-part ng-scope" ng-repeat="plan in plans">
+<div class="col-xs-2 plan-tuan-img">
+<img class="tuan-img group-grade-157001" src="images/4.jpg">
+</div>
+<div class="col-xs-4">
+<p class="rate-col">
+<span class="rate-red ng-binding"></span>
+<span class="sign">来自社保回访</span>
+</p>
+<p class="word-rate">手机用户135******55</p>
+</div>
+<div class="col-xs-6 ">
+<p class="top-margin ng-binding">我是一名个体户在这里写一些测试的文字，我是一个个体户在这里写一些测试</p>
+</div>
+</li>
+
+<li class="row right-part ng-scope" ng-repeat="plan in plans">
+<div class="col-xs-2 plan-tuan-img">
+<img class="tuan-img group-grade-157001" src="images/5.jpg">
+</div>
+<div class="col-xs-4">
+<p class="rate-col">
+<span class="rate-red ng-binding"></span>
+<span class="sign">来自社保回访</span>
+</p>
+<p class="word-rate">手机用户135******55</p>
+</div>
+<div class="col-xs-6 ">
+<p class="top-margin ng-binding">我是一名个体户在这里写一些测试的文字，我是一个个体户在这里写一些测试</p>
+</div>
+</li>
+      </ul> 
+	  </div>
+     </div> 
+  
+     <div class="row advertise-words-row"> 
+      <h3 class="text-center">关于我们</h3> 
+      <div class="text-center tech-words">
+       在这里了解更多缴纳社保的信息，我们将帮您解决问题，倾听意见反馈。
+      </div> 
+     </div> 
+     <div class="row about-us-row about-us-first"> 
+      <div class="col-xs-4 first"> 
+       <div class="dr-info introduce"> 
+        <div class="about-us-header">
+          缴纳社保 
+        </div> 
+        <div class="leads-img"> 
+        </div> 
+        <div class="company-introduce"> 
+         <span style="font-family: black;">我们是一家总部位于上海的本土高科技网</span> 
+         <span  style="font-family: black;">络交社保公司。通过国内资深团队的运作</span> 
+         <span  style="font-family: black;">和引进全球最大网络缴纳社保平台的先进技术和</span> 
+         <div class="text-right introduce-more">
+          <a href="/public/about#/company">更多&gt;</a>
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+      <div class="col-xs-4 second"> 
+       <div class="dr-info partner"> 
+        <div class="about-us-header header-second">
+          合作伙伴 
+        </div> 
+        <div class="partner-logo north-light"></div> 
+        <div class="partner-logo szb"></div> 
+        <div class="partner-logo ney"></div> 
+        <div class="partner-logo orient"></div> 
+        <div class="text-right more-detail partner-more">
+         <a href="/public/about#/partner">更多&gt;</a>
+        </div> 
+       </div> 
+      </div> 
+      <div class="col-xs-4 third"> 
+       <div class="dr-info report"> 
+        <div class="about-us-header header-third">
+         社保新闻
+        </div> 
+        <div class="media-wrapper">
+<div>
+<ul class="list-unstyled news-list">
+<li class="row ng-scope" ng-repeat="post in posts">
+<div class="news-content col-xs-8">
+<h6 class="news-date ng-binding">
+2014 10/13
+<span class="dot"></span>
+</h6>
+<h3>
+<a class="ng-binding" ng-bind="post.title" href="/blog/szyh">缴纳社保新闻新闻，这里后台调用...</a>
+</h3>
+</div>
+<div class="news-img pull-right">
+<img  src="images/bsz.jpg">
+</div>
+</li>
+<li class="row ng-scope" ng-repeat="post in posts">
+<div class="news-content col-xs-8">
+<h6 class="news-date ng-binding">
+2014 10/10
+<span class="dot"></span>
+</h6>
+<h3>
+<a class="ng-binding" ng-bind="post.title" href="/blog/ljz">缴纳社保新闻新闻，这里后台调用...</a>
+</h3>
+</div>
+<div class="news-img pull-right">
+<img src="images/gyh.jpg">
+</div>
+</li>
+<li class="row ng-scope" ng-repeat="post in posts">
+<div class="news-content col-xs-8">
+<h6 class="news-date ng-binding">
+2014 10/8
+<span class="dot"></span>
+</h6>
+<h3>
+<a class="ng-binding" ng-bind="post.title" href="/blog/hcgzf">缴纳社保新闻新闻，这里后台调用...</a>
+</h3>
+</div>
+<div class="news-img pull-right">
+<img  src="images/gyh.jpg">
+</div>
+<i class="li-dot ng-scope" ng-if="$last"></i>
+</li>
+</ul>
+</div>
+</div>
+        <div class="text-right more-detail">
+         <a href="/public/about#/media">更多&gt;</a>
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+     <!--<div class="row about-us-row"> 
+      <div class="col-xs-4 first"> 
+       <div class="dr-info introduce honor"> 
+        <div class="about-us-header">
+         点融荣誉
+        </div> 
+        <div class="awards-img"></div> 
+        <div class="company-introduce"> 
+         <span>点融网被美国最大的P2P研究机构Lend</span> 
+         <span>Academy评为“中国最重要的P2P网贷公</span> 
+         <span>司”之一；先后获得老虎基金投资，新鸿基</span> 
+         <span>集团战略投资，以及北极光创投注资。</span> 
+         <div class="text-right">
+          <a href="/public/about#/news" target="_blank">更多&gt;</a>
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+      <div class="col-xs-4 second"> 
+       <div class="dr-info user-voice"> 
+        <div class="about-us-header header-second">
+         用户反馈
+        </div> 
+        <div class="text-center"> 
+         <p class="borrower-img"></p> 
+         <p class="person-borrower">投资人</p> 
+         <p class="borrower-name">胡小姐</p> 
+        </div> 
+        <div class="quote-container"> 
+         <blockquote class="quote"> 
+          <p>白领一族的我平时也懒得看如何投资理财，以前主要通过阶梯式储蓄法来抵抗通胀。不过自从有了团团赚，我都不去银行定存了，因为团团赚的新手团利率就比银行高好多，而且流动性也不错... </p> 
+          <span class="quote-end"></span> 
+         </blockquote> 
+        </div> 
+        <div class="text-right more-voice">
+         <a href="mailto:support@dianrong.com">给我们反馈&gt;</a>
+        </div> 
+       </div> 
+      </div> 
+      <div class="col-xs-4 third"> 
+       <div class="dr-info help-center"> 
+        <div class="about-us-header header-third">
+         <span class="question">帮助中心</span>
+        </div> 
+        <div class="faq">
+         <a href="help.html"><span class="sl-icon-bold-column icon"></span><span class="question">什么是点融网</span></a>
+        </div> 
+        <div class="faq">
+         <a href="help.html"><span class="sl-icon-bold-right-arrow icon"></span><span class="question">为什么选择点融网</span></a>
+        </div> 
+        <div class="faq">
+         <a href="help.html"><span class="sl-icon-bold-spark icon"></span><span class="question">点融网投资流程</span></a>
+        </div> 
+        <div class="faq">
+         <a href="help.html"><span class="sl-icon-bold-pen icon"></span><span class="question">使用及操作</span></a>
+        </div> 
+        <div class="faq">
+         <a href="help.html"><span class="sl-icon-bold-lock icon"></span><span class="question">信息和资金安全</span></a>
+        </div> 
+        <div class="faq">
+         <a href="help.html"><span class="sl-icon-bold-paper icon"></span><span class="question">政策法规</span></a>
+        </div> 
+        <div class="faq">
+         <a href="help.html"><span class="sl-icon-bold-star icon"></span><span class="question">常见问题</span></a>
+        </div> 
+        <div class="text-right more-detail">
+         <a href="help.html">更多&gt;</a>
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="row advertise-words-row"> 
+      <h3 class="text-center">媒体评价</h3> 
+      <div class="text-center tech-words">
+       更客观真实的第三方评价，进一步了解点融网。
+      </div> 
+     </div> -->
+     <div class="row "> 
+	 <div class="rrb1_news">
+            <p class="news_Img1">媒体报道</p>
+        </div>
+      <!--<div class="col-xs-4 report"> 
+       <a href="http://www.dianrong.com/blog/dian-rong-wang-lian-yi-zhe-jiang-da-xue-zhe-shang-zong-cai-gao-ji-yan-xiu-ban" target="_blank"> 
+        <div class="author text-center">
+         <span class="logo media-gemag-logo">环球企业网</span>
+        </div> 
+        <blockquote class="quote"> 
+         <p>这里面最好能写一些媒体简要的评论报告，我这里先做一下测试，这些都需要在后台添加维护<span class="quote-end"></span> </p> 
+        </blockquote> </a> 
+      </div> 
+      <div class="col-xs-4 report report-fc"> 
+       <a href="http://www.dianrong.com/blog/dian-rong-wang-chuang-shi-ren-jiang-jiao-yi-quan-jiao-huan-gei-jie-dai-zhe" target="_blank"> 
+        <div class="author text-center">
+         <span class="logo media-fc-logo">福布斯中国</span>
+        </div> 
+        <blockquote class="quote"> 
+         <p>这里面最好能写一些媒体简要的评论报告，我这里先做一下测试，这些都需要在后台添加维护<span class="quote-end"></span></p> 
+        </blockquote> </a> 
+      </div> 
+      <div class="col-xs-4 report report-cbh"> 
+       <a href="http://www.dianrong.com/blog/zhuan-fang-lending-club-dian-rong-wang-lian-he-chuang-shi-ren-su-hai-de-hu-lian-wang-jin-rong-xu-yao-you-xiao-jian-guan" target="_blank"> 
+        <div class="author text-center">
+         <span class="logo media-21cbh-logo">21世纪经济网</span>
+        </div> 
+        <blockquote class="quote"> 
+         <p>这里面最好能写一些媒体简要的评论报告，我这里先做一下测试，这些都需要在后台添加维护<span class="quote-end"></span></p> 
+        </blockquote> </a> 
+      </div> -->
+	  <script>
+            var s, s2, s3, timer;
+            function init() {
+                s = getid("div1");
+                s2 = getid("div2");
+                s3 = getid("div3");
+                s3.innerHTML = s2.innerHTML;
+                timer = setInterval(mar, 30)
+            }
+            function mar() {
+                if (s2.offsetWidth <= s.scrollLeft) {
+                    s.scrollLeft -= s2.offsetWidth;
+                } else { s.scrollLeft++; }
+            }
+            function getid(id) {
+                return document.getElementById(id);
+            }
+            window.onload = init;
+        </script>
+	  <div class="d1" id="div1">
+            <span class="div2" id="div2"><a onclick="window.showModalDialog('http://toutiao.com/i6216273818814513666/')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/12/201512031914461.jpg" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://home.ebrun.com/blog-59900.html')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/12/201512031914361.jpg" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://news.163.com/15/0623/13/ASQ2AMFS00014AED.html')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/12/201512031848021.jpg" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://news.sina.com.cn/o/2015-09-08/doc-ifxhtvkk5639935.shtml')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/12/201512031848421.jpg" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://www.kejixun.com/article/201511/135732.html')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/12/201512031829361.jpg" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://www.csdn.net/article/a/2015-11-13/15830828')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/12/201512031755471.jpg" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://shanxi.china.com/sxjj/cyjj/11162459/20150619/19875256.html')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231526351.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://news.stockstar.com/SS2015051100002138.shtml')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231525131.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://www.qiye.gov.cn/news/20150508_122020.html')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231522361.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://www.ithome.com/html/it/158169.htm')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231517481.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://finance.huanqiu.com/zl/2015-05/6486583.html')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231516091.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://economy.gmw.cn/2015-05/11/content_15625982.htm')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231515351.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://gb.cri.cn/44571/2015/05/18/7872s4966274.htm')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/12/201512031825251.jpg" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://finance.cngold.org/c/2015-06-23/c3354284.html')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231513311.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://insurance.cnfol.com/baoxiandongtai/20150623/20981203.shtml')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/12/201512031824011.jpg" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://www.takefoto.cn/viewnews-381543.html')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/9/201509081125471.jpg" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://www.qnw.cc/gnzx/139701257952169.html')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/12/201512031818301.jpg" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://cio.it168.com/a2014/0326/1607/000001607034.shtml')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231456181.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://it.msn.com.cn/055247/869714439685b.shtml')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/12/201512031816231.jpg" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://3g.k.sohu.com/t/n24793896')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231454281.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://jiangsu.china.com.cn/html/2014/qy_0507/284157.html')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231453091.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://news.163.com/15/0430/15/AOF6CO5N00014AEE.html')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231449141.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://cd.qq.com/a/20140415/012242.htm')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231448221.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://gz.cnr.cn/qy/qydt/201405/t20140513_515497083.shtml')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231446421.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://mt.sohu.com/20150428/n412003009.shtml')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231442251.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://www.bj.xinhuanet.com/hbpd/2014-06/24/c_1111283927.htm')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231441221.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://luxury.ce.cn/hydt/cygc/201404/01/t20140401_1516046.shtml')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231440311.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://luxury.ce.cn/hydt/cygc/201404/01/t20140401_1516046.shtml')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231439491.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://beijing.auto.ifeng.com/xinwen/2014/0321/11131.shtml')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231437361.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://news.sina.com.cn/o/2014-05-17/013030153381.shtml')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/12/201512031859071.jpg" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://www.southmoney.com/caijing/gongsixinwen/201511/447193.html')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/12/201512031813001.jpg" height="82" style="border:0px"></a>
+</span>
+            <span id="div3" class="div2"><a onclick="window.showModalDialog('http://toutiao.com/i6216273818814513666/')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/12/201512031914461.jpg" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://home.ebrun.com/blog-59900.html')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/12/201512031914361.jpg" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://news.163.com/15/0623/13/ASQ2AMFS00014AED.html')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/12/201512031848021.jpg" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://news.sina.com.cn/o/2015-09-08/doc-ifxhtvkk5639935.shtml')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/12/201512031848421.jpg" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://www.kejixun.com/article/201511/135732.html')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/12/201512031829361.jpg" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://www.csdn.net/article/a/2015-11-13/15830828')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/12/201512031755471.jpg" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://shanxi.china.com/sxjj/cyjj/11162459/20150619/19875256.html')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231526351.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://news.stockstar.com/SS2015051100002138.shtml')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231525131.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://www.qiye.gov.cn/news/20150508_122020.html')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231522361.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://www.ithome.com/html/it/158169.htm')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231517481.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://finance.huanqiu.com/zl/2015-05/6486583.html')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231516091.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://economy.gmw.cn/2015-05/11/content_15625982.htm')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231515351.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://gb.cri.cn/44571/2015/05/18/7872s4966274.htm')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/12/201512031825251.jpg" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://finance.cngold.org/c/2015-06-23/c3354284.html')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231513311.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://insurance.cnfol.com/baoxiandongtai/20150623/20981203.shtml')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/12/201512031824011.jpg" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://www.takefoto.cn/viewnews-381543.html')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/9/201509081125471.jpg" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://www.qnw.cc/gnzx/139701257952169.html')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/12/201512031818301.jpg" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://cio.it168.com/a2014/0326/1607/000001607034.shtml')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231456181.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://it.msn.com.cn/055247/869714439685b.shtml')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/12/201512031816231.jpg" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://3g.k.sohu.com/t/n24793896')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231454281.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://jiangsu.china.com.cn/html/2014/qy_0507/284157.html')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231453091.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://news.163.com/15/0430/15/AOF6CO5N00014AEE.html')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231449141.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://cd.qq.com/a/20140415/012242.htm')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231448221.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://gz.cnr.cn/qy/qydt/201405/t20140513_515497083.shtml')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231446421.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://mt.sohu.com/20150428/n412003009.shtml')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231442251.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://www.bj.xinhuanet.com/hbpd/2014-06/24/c_1111283927.htm')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231441221.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://luxury.ce.cn/hydt/cygc/201404/01/t20140401_1516046.shtml')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231440311.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://luxury.ce.cn/hydt/cygc/201404/01/t20140401_1516046.shtml')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231439491.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://beijing.auto.ifeng.com/xinwen/2014/0321/11131.shtml')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/7/201507231437361.png" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://news.sina.com.cn/o/2014-05-17/013030153381.shtml')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/12/201512031859071.jpg" height="82" style="border:0px"></a>
+<a onclick="window.showModalDialog('http://www.southmoney.com/caijing/gongsixinwen/201511/447193.html')" href="javascript:void(0);"><img src="http://img.rrb365.com/UF/PC/upload/Ad/2015/12/201512031813001.jpg" height="82" style="border:0px"></a>
+</span>
+        </div>
+     </div> 
+    </div> 
+   </div> 
+   <!--<div class="bottom-register"> 
+    <h3 class="text-center">准备好享受高投资回报了吗？</h3>
+    <div class="text-center"> 
+     <a class="btn btn-lg btn-secondary btn-embossed" href="#" rel="nofollow" id="scrollToTop">立即注册</a> 
+    </div> 
+   </div>-->  
+   <!--footer--> 
+   <div class="bottom-menu bottom-menu-large bottom-menu-inverse sl-footer open-bottom footer-animate new-footer footer-navbar"> 
+    <div class="inside-container"> 
+     <div class="row title-row"> 
+      <div class="col-xs-4 navbar-logo"> 
+       <div class="navbar-brand">
+        <a class="logo" href="index.html">点融网</a>
+       </div> 
+      </div> 
+      <div class="col-xs-4 navbar-contact"> 
+       <div class="support-phone"> 
+        <div class="col-xs-3 phone-img"> 
+         <span class="phone"></span> 
+        </div> 
+        <div class="col-xs-9 phone-num"> 
+         <span class="number">021-51992271</span> 
+        </div> 
+       </div> 
+      </div> 
+      <div class="col-xs-4 pull-right"> 
+       <ul class="bottom-icons social-icons"> 
+        <li><a href="#" data-toggle="modal" data-target="#myModal" rel="nofollow"><span class="sl-icon-wechat"></span></a></li> 
+        <li><a href="http://weibo.com/" target="_blank" rel="nofollow"><span class="sl-icon-weibo"></span></a></li> 
+       </ul> 
+      </div> 
+     </div> 
+     <div class="row"> 
+      <div class="col-xs-12"> 
+       <div class="row site-map"> 
+        <div class="col-xs-4"> 
+         <h6 class="title ">公司信息</h6> 
+         <ul class="bottom-links"> 
+          <li><a href="/public/about#/company">关于社保</a></li> 
+          <li><a href="/public/about#/news">公司动态</a></li> 
+          <li><a href="/public/about#/media">媒体报道</a></li> 
+          <li><a href="/public/about#/job">招贤纳士</a></li> 
+          <li><a href="/public/about#/contact">联系我们</a></li> 
+          <li><a href="/blog/devBlog">社保缴纳</a></li> 
+         </ul> 
+        </div> 
+        <div class="col-xs-4"> 
+         <h6 class="title">相关政策</h6> 
+         <ul class="bottom-links"> 
+          <li><a href="/public/rates-and-fees" target="_blank">费率说明</a></li> 
+          <li><a href="/public/principal-protection" target="_blank">社会保障</a></li> 
+          <li><a href="/public/terms-of-use" target="_blank">使用条款</a></li> 
+          <li><a href="/public/terms-of-use?protocol=privacy-and-security" target="_blank">隐私保护</a></li> 
+         </ul> 
+        </div> 
+        <div class="col-xs-4"> 
+         <h6 class="title">手机应用</h6> 
+         <ul class="bottom-links"> 
+          <li><a href="https://itunes.apple.com/" target="_blank" ga-event="" ga-category="iosAppLink" ga-action="click" ga-label="footer" ga-value="trackValue" rel="nofollow" class="ng-isolate-scope">iPhone版下载</a></li> 
+          <li><a href="http://app.mi.com/detail/56106" target="_blank" ga-event="" ga-category="androidAppLink" ga-action="click" ga-label="footer" ga-value="trackValue" rel="nofollow" class="ng-isolate-scope">Android版下载（测试版）</a></li> 
+         </ul> 
+         <div class="wechat"> 
+          <span class="qr-code">公众号 - dianrongvip</span> 
+          <div class="description"> 
+           <span class="name">微信公众号</span> 
+           <span>社保在线缴纳</span> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="friend-links"> 
+     <div class="container friend-container"> 
+      <div class="col-xs-1 sign-link"> 
+       <p><span class="sl-icon-branch"></span>友情链接</p> 
+      </div> 
+      <div class="col-xs-11 friend-link-site"> 
+       <a href="http://iof.hexun.com/" target="_blank">友情链接</a> 
+       <a href="http://licai.cofool.com/" target="_blank">友情链接 </a> 
+       <a href="http://www.jinfuzi.com/p2p/" target="_blank">友情链接</a> 
+       <a href="http://www.trustores.cn/" target="_blank">友情链接</a> 
+       <a href="http://www.asiafinance.cn/" target="_blank">友情链接</a> 
+       <a href="http://www.fxsol-uk.com/" target="_blank">友情链接</a> 
+       <a href="http://www.guijinshu.com/" target="_blank">友情链接</a> 
+       <a href="http://www.dingniugu.com/" target="_blank">友情链接</a> 
+       <a href="http://www.ucai123.com/" target="_blank">友情链接</a> 
+       <a href="http://www.szjstz.cn/" target="_blank">友情链接</a> 
+      </div> 
+     </div> 
+     <div class="container"> 
+      <div class="text-center copyright">
+        &copy;2014 社保缴纳沪ICP备140243434号上海某某某信息服务有限责任公司 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="modal fade wechat-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+    <div class="modal-dialog modal-sm"> 
+     <div class="modal-content"> 
+      <div class="modal-header"> 
+       <button type="button" class="close sl-icon-cross" data-dismiss="modal" aria-hidden="true"></button> 
+       <h6 class="modal-title" id="myModalLabel">关注官方微信</h6> 
+      </div> 
+      <div class="modal-body"> 
+       <div class="wechat-subscription"> 
+        <h6>我们的订阅号</h6> 
+        <p>了解各种社保缴纳</p> 
+        <img src="images/qrcode-dianrongapi.jpg" alt="订阅号" /> 
+        <p>dianrongapi</p> 
+       </div> 
+       <div class="wechat-service"> 
+        <h6>社保缴纳服务号</h6> 
+        <p>查询投保情况</p> 
+        <img src="images/qrcode-dianrongvip.jpg" alt="服务号" /> 
+        <p>dianrongvip</p> 
+       </div> 
+      </div> 
+      <div class="modal-footer">
+        添加方式：打开微信，点击″发现″菜单，使用″扫一扫″功能；或者在微信中点击&quot;联系人&quot;，添加以上英文账号名为好友。 
+      </div> 
+     </div>
+     <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+   </div>
+   <!-- /.modal --> 
+  </div>
+ <script type="text/javascript"> 
+	  function autoScroll(obj){  
+			$(obj).find("ul.scroll").animate({  
+				marginTop : "-125px"  
+			},1000,function(){  
+				$(this).css({marginTop : "0px"}).find("li:first").appendTo(this);  
+			})  
+		}  
+		$(function(){  
+			setInterval('autoScroll(".plans-info-right")',4000);			  
+		}) 
+		
+</script>  
+ </body>
+</html>
